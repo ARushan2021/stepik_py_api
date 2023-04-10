@@ -9,7 +9,7 @@ class GoogleMapAPIDeleteGet:
         self.key = '?key=qaclick123'
 
     def delete_new_location(self):
-        """Удаляем 2-ю и 3-ю запись по place_id из файлика"""
+        """Удаляем 2-ю и 4-ю запись по place_id из файлика"""
         delete_resource = '/maps/api/place/delete/json'
         delete_url = self.base_url + delete_resource + self.key
         place_id_file = open("place_id/place_id.txt", 'r')
